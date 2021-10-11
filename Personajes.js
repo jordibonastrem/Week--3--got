@@ -1,7 +1,7 @@
 class Personaje {
   serie = "Juego de Tronos";
   nombre;
-  familia = {
+  static familia = {
     ARRYN: "casa arryn",
     TRULLY: "casa trully",
     TYRELL: "casa tyrell",
@@ -12,7 +12,7 @@ class Personaje {
     STARK: "casa Stark",
   };
 
-  tipo = {
+  static tipo = {
     REY: "es el rey",
     LUCHADOR: "es un luchador",
     ASESOR: "es un asesor",
@@ -25,7 +25,10 @@ class Personaje {
     this.estado = estado;
   }
 
-  comunicar() {}
+  comunicar() {
+    return "Soy: ";
+  }
+
   morir() {
     this.estado = !this.estado;
   }
