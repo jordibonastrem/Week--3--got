@@ -25,7 +25,10 @@ class Personaje {
     this.estado = estado;
   }
 
-  comunicar() {}
+  comunicar() {
+    return "";
+  }
+
   morir() {
     this.estado = !this.estado;
   }
