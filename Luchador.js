@@ -6,6 +6,6 @@ class Luchador extends Personaje {
   }
 
   comunicar() {
-    return "Primero pego y luego pregunto";
+    return super.comunicar() + " un luchador";
   }
 }

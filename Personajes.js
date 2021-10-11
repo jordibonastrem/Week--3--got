@@ -26,7 +26,7 @@ class Personaje {
   }
 
   comunicar() {
-    return "";
+    return "Soy: ";
   }
 
   morir() {
